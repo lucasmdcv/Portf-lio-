@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contato</title>
+    <!-- Inclui o Tailwind CSS via CDN para estilização rápida -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Define a fonte Inter para todo o corpo do documento */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Cor de fundo suave */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Cabeçalho da página -->
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold rounded-md">Contato</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="../inicio/index.html" class="hover:text-blue-200 rounded-md p-2">Início</a></li>
+                    <li><a href="../sobre/index.html" class="hover:text-blue-200 rounded-md p-2">Sobre</a></li>
+                  
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página de contato -->
+    <main class="flex-grow container mx-auto p-4 md:p-8">
+        <section class="bg-white p-6 rounded-lg shadow-lg mb-8">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center rounded-md">Fale Conosco</h2>
+            <p class="text-gray-700 leading-relaxed mb-8 text-center">
+                Tem alguma dúvida, sugestão ou precisa de ajuda? Preencha o formulário abaixo ou utilize nossas informações de contato.
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Formulário de Contato -->
+                <div>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nome Completo</label>
+                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Seu nome">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Seu E-mail</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="seu.email@exemplo.com">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 text-sm font-bold mb-2">Assunto</label>
+                            <input type="text" id="subject" name="subject" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Assunto da sua mensagem">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Mensagem</label>
+                            <textarea id="message" name="message" rows="6" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Escreva sua mensagem aqui..."></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Informações de Contato -->
+                <div class="p-6 bg-gray-50 rounded-lg shadow-inner">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 rounded-md">Nossos Contatos</h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li>
+                            <strong class="font-bold">Endereço:</strong> Rua Exemplo, 123 - Centro, Cidade - Estado, CEP: 00000-000
+                        </li>
+                        <li>
+                            <strong class="font-bold">Telefone:</strong> (XX) XXXX-XXXX
+                        </li>
+                        <li>
+                            <strong class="font-bold">E-mail:</strong> contato@minhapagina.com
+                        </li>
+                        <li>
+                            <strong class="font-bold">Horário de Atendimento:</strong> Segunda a Sexta, das 9h às 18h
+                        </li>
+                    </ul>
+                    <!-- Você pode adicionar um mapa aqui, se desejar -->
+                    <div class="mt-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.208453457193!2d-122.0842496846813!3d37.42199987982189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb4f1f1d1f0d3%3A0x7d25e07a3c3c3a!2sGoogleplex!5e0!3m2!1sen!2sbr!4v1678901234567!5m2!1sen!2sbr"
+                            width="100%"
+                            height="250"
+                            style="border:0; border-radius: 0.5rem;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer class="bg-gray-800 text-white p-4 mt-8 rounded-t-lg">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Minha Página. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
