@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Básica</title>
+    <!-- Inclui o Tailwind CSS via CDN para estilização rápida -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Define a fonte Inter para todo o corpo do documento */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Cor de fundo suave */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Cabeçalho da página -->
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold rounded-md">Minha Página</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="../index.html" class="hover:text-blue-200 rounded-md p-2">Início</a></li>
+                    <li><a href="../sobre/index.html" class="hover:text-blue-200 rounded-md p-2">Sobre</a></li>
+                   
+                    <li><a href="../contato/index.html" class="hover:text-blue-200 rounded-md p-2">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main class="flex-grow container mx-auto p-4 md:p-8">
+        <section class="bg-white p-6 rounded-lg shadow-lg mb-8">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4 rounded-md">Bem-vindo à Nossa Página!</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Esta é uma página HTML básica criada para demonstrar como é fácil construir algo simples e responsivo
+                usando Tailwind CSS. Você pode personalizar este conteúdo para atender às suas necessidades.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                Explore a navegação acima para ver diferentes seções ou continue lendo para mais informações.
+            </p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Cartão de Recurso 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3 rounded-md">Recurso Incrível 1</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Detalhes sobre o primeiro recurso, explicando seus benefícios e como ele pode ser útil.
+                    Concentre-se em um aspecto chave.
+                </p>
+                <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-md transition duration-300 ease-in-out">
+                    Saiba Mais
+                </button>
+            </div>
+
+            <!-- Cartão de Recurso 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3 rounded-md">Recurso Incrível 2</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Descrição do segundo recurso, com foco em sua funcionalidade e como ele aprimora a experiência.
+                    Seja conciso.
+                </p>
+                <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-md transition duration-300 ease-in-out">
+                    Descubra
+                </button>
+            </div>
+
+            <!-- Cartão de Recurso 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3 rounded-md">Recurso Incrível 3</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Explicação do terceiro recurso, destacando seu valor único e o que o torna especial para os usuários.
+                    Chame a atenção.
+                </p>
+                <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-md transition duration-300 ease-in-out">
+                    Comece Agora
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer class="bg-gray-800 text-white p-4 mt-8 rounded-t-lg">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Minha Página. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
